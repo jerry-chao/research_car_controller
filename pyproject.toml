@@ -1,0 +1,35 @@
+[project]
+name = "research_car_controller"
+version = "0.1.0"
+description = "research_car_controller using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.203.1,<1.0.0",
+    "httpx[socks]",
+    "socksio>=1.0.0",
+]
+
+[project.scripts]
+research_car_controller = "research_car_controller.main:run"
+run_crew = "research_car_controller.main:run"
+train = "research_car_controller.main:train"
+replay = "research_car_controller.main:replay"
+test = "research_car_controller.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+
+[tool.basedpyright]
+# Use "basic" mode which disables reportMissingTypeStubs by default
+typeCheckingMode = "basic"
+
+# Alternative: Explicitly disable the missing type stubs warning
+# reportMissingTypeStubs = "none"
+
+# Alternative: Allow untyped libraries to suppress type-related warnings
+# allowedUntypedLibraries = ["crewai"]
