@@ -28,6 +28,7 @@ analysis_task:
     A polished, professional report on {topic} that presents the research
     findings with added analysis and insights. The report should be well-structured
     with an executive summary, main sections, and conclusion.
+    The output should be written in Chinese language.
   agent: analyst
   context:
     - research_task
