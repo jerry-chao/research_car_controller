@@ -22,7 +22,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        "topic": "Research on intelligent car control software development, including current industry status, open source implementations, hardware control logic implementation, and summary of key terminology and concepts",
+        "topic": "Developing a car control app to manage vehicle features including seats, air conditioning, windows, and lighting systems. Research should cover third-party hardware integration, project management approaches, product design considerations, technical implementation strategies, and available open source solutions in the automotive control software industry.",
     }
 
     try:
